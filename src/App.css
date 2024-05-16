@@ -1,5 +1,7 @@
+/* App.css */
+
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Arial', sans-serif;
 	background-color: #f7f9fc;
 	margin: 0;
 	padding: 0;
@@ -11,7 +13,7 @@ body {
 
 .App {
 	text-align: center;
-	background-color: #fff;
+	background: #ffffff;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	padding: 20px;
@@ -31,9 +33,18 @@ h1 {
 	margin-bottom: 10px;
 }
 
+.note-inputs {
+	margin-bottom: 20px;
+}
+
 .note-inputs input[type='text'],
 .note-inputs textarea {
 	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: calc(100% - 22px);
+	margin-bottom: 10px;
+	font-size: 16px;
 }
 
 .note-inputs textarea {
@@ -65,12 +76,12 @@ button:hover {
 
 ul {
 	list-style: none;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 }
 
 li {
-	background-color: #f1f1f1;
+	background: #f1f1f1;
 	border-radius: 5px;
 	padding: 10px;
 	margin-bottom: 10px;
@@ -81,9 +92,9 @@ li {
 }
 
 li span {
+	cursor: pointer;
 	flex-grow: 1;
 	text-align: left;
-	cursor: pointer;
 }
 
 li button {
